@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML/CSS Starter</title>
+  <meta name="description" content="A minimal, responsive HTML/CSS starter template." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Brand</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a class="button" href="#get-started">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="get-started">
+      <div class="container">
+        <h1>Build fast with a clean starter</h1>
+        <p>A lightweight, accessible HTML + CSS baseline to get you shipping immediately.</p>
+        <div class="actions">
+          <a class="button primary" href="#features">Explore Features</a>
+          <a class="button" href="#about">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Features</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Responsive</h3>
+            <p>Mobile-first layout that scales smoothly from phones to desktops.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible</h3>
+            <p>Semantic HTML, good contrast, and focus styles baked in.</p>
+          </article>
+          <article class="card">
+            <h3>Customizable</h3>
+            <p>CSS variables make it simple to theme and extend.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About this starter</h2>
+        <p>This template is intentionally minimal: just semantic HTML and modern CSS. No build steps, no frameworks—open index.html to run.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Company. All rights reserved.</p>
+    </div>
+    <script>
+      // Minimal enhancement: set current year without requiring external JS files.
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
 
